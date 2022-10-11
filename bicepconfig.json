@@ -1,0 +1,10 @@
+{
+  "moduleAliases": {
+    "ts": {},
+    "br": {
+      "my-acr": {
+        "registry": "acrbicep16119.azurecr.io"
+      }
+    }
+  }
+}

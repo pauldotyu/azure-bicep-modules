@@ -15,7 +15,7 @@ param sku string = 'Standard'
   'UserAssigned'
 ])
 @description('Two options are available: SystemAssigned or UserAssigned')
-param managedIdentityType string
+param managedIdentityType string = 'SystemAssigned'
 
 @description('Required when managed identity type is set to UserAssigned')
 param userAssignedIdentities object = {}

@@ -20,7 +20,7 @@ module acr 'br/my-acr:bicep/modules/azure-container-registry:0.1' = {
     location: location
     tags: tags
     sku: 'Basic'
-    adminUserEnabled: true
+    adminUserEnabled: false
     managedIdentityType: 'SystemAssigned'
     publicNetworkAccess: true
   }

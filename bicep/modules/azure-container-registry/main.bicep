@@ -24,7 +24,8 @@ param adminUserEnabled bool = false
 
 param anonymousPullEnabled bool = false
 
-param publicNetworkAccess bool = false
+@description('Disableing public network access is not supported for Basic and Standard SKUs')
+param publicNetworkAccess bool = (sku == 'Premium' ? false : true)
 
 resource registry 'Microsoft.ContainerRegistry/registries@2022-02-01-preview' = {
   name: name

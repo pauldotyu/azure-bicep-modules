@@ -12,7 +12,7 @@ resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
 }
 
 // Set up the container registry
-module acr 'br/my-acr:bicep/modules/azure-container-registry:0.1' = {
+module acr 'br/my-acr:bicep/modules/azure-container-registry:v0.1' = {
   scope: rg
   name: 'acrDeploy'
   params: {
